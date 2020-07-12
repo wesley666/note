@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/card_view_margin"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp">
+<!--    app:cardUseCompatPadding="true"-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--一篇note的title  也就是内容的第一行,有图片就图片第一行
+        android:scaleType指定图片缩放模式
+        -->
+        <ImageView
+            android:id="@+id/note_img"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/note_img"/>
+
+        <!--一篇note的title  也就是内容的第一行-->
+        <TextView
+            android:id="@+id/note_title"
+            android:paddingTop="5dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--一篇note的内容摘要  也就是内容的第二行-->
+        <TextView
+            android:id="@+id/note_subContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:maxLines="8"
+            android:ellipsize="end"/>
+
+        <!--一篇note的更新日期-->
+        <TextView
+            android:id="@+id/note_createTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

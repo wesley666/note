@@ -1,0 +1,11 @@
+<litepal>
+    <dbname value = "notes_db"/>
+
+    <version value = "9" />
+
+    <list>
+        <mapping class="com.example.note.db.Note"/>
+        <mapping class="com.example.note.db.Todo"/>
+        <mapping class="com.example.note.db.MediaForNote"/>
+    </list>
+</litepal>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="258"
+        android:fillViewport="true">
+
+        <EditText
+            android:id="@+id/note_new_editText"
+            android:gravity="start"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:background="@color/white"
+            >
+
+            <!--设置光标的颜色   android:textCursorDrawable="@drawable/bg_edittext"-->
+            <!--<requestFocus />    打开activity时自动获得焦点-->
+        </EditText>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/rich_text_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/btn_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_title"
+            android:background="#ffffff"/>
+
+        <ImageButton
+            android:id="@+id/btn_highlight"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_highlight"
+            android:background="#ffffff"/>
+
+        <ImageButton
+            android:id="@+id/btn_bold"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_format_bold_black_36dp"
+            android:background="#ffffff"/>
+
+        <ImageButton
+            android:id="@+id/btn_microphone"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_microphone"
+            android:background="#ffffff"/>
+
+        <ImageButton
+            android:id="@+id/btn_photo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_camera"
+            android:background="#ffffff"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
